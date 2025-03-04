@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="app">
+    <a href="pag.html">Volver</a>
+    <h1>Centro medico Proxy</h1>
+    <p>agregar sus datos para sacar su turno</p>
+    
+    <!-- Formulario -->
+    <form id="crud-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" required>
+
+        <label for="dni">DNI:</label>
+        <input type="number" id="dni" required>
+
+        <label for="pais">Sexo:</label>
+        <select id="pais" required>
+            <option value="1">Masculino</option>
+            <option value="2">Femenino</option>
+        </select>
+
+        <label for="estado">Tipo de especialista:</label>
+        <select id="estado" required>
+            <option value="1">Clinico</option>
+            <option value="2">Odontologico</option>
+            <option value="3">Cardiologo</option>
+            <option value="4">Endocrinologa</option>
+            <option value="5">Pediatra</option>
+            <option value="6">psicologo</option>
+
+        </select>
+
+        <label for="fecha">Fecha:</label>
+        <input type="datetime-local" id="fecha" required>
+
+        <button type="button" onclick="agregarRegistro()">Agregar</button>
+    </form>
+
+   
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
+
