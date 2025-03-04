@@ -17,12 +17,12 @@ document.addEventListener("click", (e) => {
     const passwordValue = $password.value;
 
 
-    if (usernameValue === "pilo" && passwordValue === "perez") {
+    if (usernameValue === "nico" && passwordValue === "vallejo") {
       window.location.href = "index.html";
     alert("Bienvenido Usuario/Empleado");
     
-  }else if (usernameValue === "enzo" && passwordValue === "123") {
-    window.location.href = "index2.html";
+  }else if (usernameValue === "nico" && passwordValue === "10") {
+    window.location.href = "admin.html";
   alert("Bienvenido Admin");
   
 } else {
@@ -31,3 +31,4 @@ document.addEventListener("click", (e) => {
 }
 }
 });
+
